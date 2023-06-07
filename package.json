@@ -6,6 +6,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.15",
     "@expo-google-fonts/nunito": "^0.2.3",
     "@expo/vector-icons": "^13.0.0",
     "expo": "^48.0.7",
@@ -16,6 +17,7 @@
     "expo-router": "^1.2.0",
     "expo-splash-screen": "~0.18.1",
     "expo-status-bar": "~1.4.2",
+    "graphql": "^15.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.71.8",
