@@ -1,6 +1,10 @@
-import {View, Text} from 'react-native';
+import {View, Text, Alert} from 'react-native';
 import React from 'react';
 import {Stack} from 'expo-router';
+import {AntDesign} from '@expo/vector-icons';
+import {themePalette} from '../../../theme';
+import LogoTitle from '../../../components/LogoTitle';
+import HeaderRight from '../../../components/HeaderRight';
 
 const StackLayout = () => {
   return (
@@ -8,14 +12,23 @@ const StackLayout = () => {
       <Stack.Screen
         name="index"
         options={{
-          headerTitle: 'Check Screen',
+          headerTitle: (props) => <LogoTitle {...props} />,
+          title: 'Check Screen',
+          headerStyle: {
+            backgroundColor: themePalette.accentColor,
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontSize: 24,
+            fontFamily: 'Nunito_700Bold',
+          },
+          headerRight: () => <HeaderRight />,
         }}
       />
       <Stack.Screen
         name="results"
         options={{
           headerShown: false,
-          headerTitle: 'Results Screen',
         }}
       />
     </Stack>

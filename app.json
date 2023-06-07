@@ -5,6 +5,8 @@
       "bundler": "metro"
     },
     "name": "RNSkriemelis",
-    "slug": "RNSkriemelis"
+    "slug": "RNSkriemelis",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light"
   }
 }
